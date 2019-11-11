@@ -19,4 +19,3 @@ function binarySearch(arr, target) {
 }
 var a = binarySearch([1, 3, 5, 7, 9, 15, 23, 56, 788, 1356], 1)
 console.log(a);
-

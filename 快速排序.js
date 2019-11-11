@@ -1,4 +1,4 @@
-var arr = [12, 27, 22, 894, 235, 923, 23, 734, 823, 62, 74, 278, 956, 276, 74, 7, 8];
+var arr = [12, 27, 22, 894, 235, 923, 23,23,734, 823, 62, 74, 278, 956, 276, 74, 7, 8];
 function quickSort(arr) {
   if (arr <= 1) { return arr };
   var midIndex = Math.floor(arr.length / 2);

@@ -2,13 +2,15 @@ function fibonacci(n) {
   if (n <= 2) {
     return 1;
   }
-  var count = 0;
-  for (var i = 0; i < n; ++i) {
-    count = i + i-i;
-  
+  var fn1 = 1;
+  var fn2 = 1;
+  var arr=[1,1]
+  for (var i = 3; i <= n; ++i){
+    fn = fn1 + fn2;
+    arr.push(fn);
+    fn1 = fn2;
+    fn2 = fn;
   }
-  return count;
+  return arr;
 }
-console.log(fibonacci(5))
-
-/* i <= 1 ? 1 : fibonacci(i - 1) + fibonacci(i - 2); */
+console.log(fibonacci(7))
