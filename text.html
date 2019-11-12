@@ -11,23 +11,24 @@
 </body>
 <script>
 var str1 = 'abcdef';
-var str2 = 'edfghi';
+var str2 = 'defghi';
 
 function binarySearch(arr, target) {
   var arrStr = []
+  var right = arr.length - 1;
+  var left = 0;
   for (var i = 0; i < target.length; ++i) {
-    var right = arr.length - 1;
-    var left = 0;
-    while (left <= right) {
-      var mid = Math.ceil((left + right) / 2)
-      if (target[i] === arr[mid]) {
-         arrStr.push(target[i])
-      } else if (target[i] > arr[mid]) {
-        left = mid + 1;
-      } else {
-        right = mid - 1;
-      }
-    }
+    // while (left <= right) {
+    //   var mid = Math.ceil((left + right) / 2)
+    //   if (target[i] === arr[mid]) {
+    //      arrStr.push(target[i])
+    //   } else if (target[i] > arr[mid]) {
+    //     left = mid + 1;
+    //   } else {
+    //     right = mid - 1;
+    //   }
+    // }
+    console.log(target[i]);
   }
   return arrStr.join('')
 }
