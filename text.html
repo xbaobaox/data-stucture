@@ -10,29 +10,22 @@
   
 </body>
 <script>
-var str1 = 'abcdef';
-var str2 = 'defghi';
-
-function binarySearch(arr, target) {
-  var arrStr = []
-  var right = arr.length - 1;
-  var left = 0;
-  for (var i = 0; i < target.length; ++i) {
-    // while (left <= right) {
-    //   var mid = Math.ceil((left + right) / 2)
-    //   if (target[i] === arr[mid]) {
-    //      arrStr.push(target[i])
-    //   } else if (target[i] > arr[mid]) {
-    //     left = mid + 1;
-    //   } else {
-    //     right = mid - 1;
-    //   }
-    // }
-    console.log(target[i]);
+var str3 = "abcdefghi";
+var str4 = "efg";
+function fuckIndex(data, target) {
+  for (var i = 0; i < data.length; ++i) {
+    var fuck = data[i] + data[i + 1] + data[i + 2];
+    console.log(i);
+    if (fuck == target) {
+      return i;
+    } else {
+      return -1;
+    } 
   }
-  return arrStr.join('')
 }
-var a = binarySearch(str1.split(''), str2.split(''))
-console.log(a);
+console.log(fuckIndex(str3, str4));
+
+
+
 </script>
 </html>
