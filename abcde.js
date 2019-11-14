@@ -29,5 +29,4 @@
 // }
 // var result = reverse(str);
 // console.log(result);
-var str = 'abcdef'
-console.log('a' < ' ')
+
