@@ -1,28 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+      }
+    </style>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-</head>
-
-<body>
-
-</body>
-<script>
- 
-
-var xhr = new XMLHttpRequest(); 
-// xhr.open('GET', 'https://www.zhihu.com/api/v4/search/preset_words?w=preset_words'); 
-xhr.open('GET', 'http://route.showapi.com/138-46'); 
-xhr.onreadystatechange = function (xhr) { 
-  console.log(xhr)
-  
-}
-xhr.send() 
-
-</script>
-
+  <body></body>
+  <script>
+    for (var i = 0; i < 5; i++) {
+      setTimeout(() => {
+        console.log(i);
+      }, 1000);
+    }
+    console.log(i)
+  </script>
 </html>
